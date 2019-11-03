@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <script>
+    let moneyInHand = 1e-9;
+    console.log(moneyInHand.toString());
+    console.log(String(500));
+    
+    let moneyInHand1=500.4;
+    console.log(Math.floor(moneyInHand1));
+    console.log(moneyInHand1.toFixed(8));
+    let money = 100;
+    console.log(typeof(money));
+    console.log(isNaN(money));
+    let money1="500.8";
+    let float = 10.2;
+    console.log(parseFloat(money));
+    console.log(Math.min(10,5,30,20));
+    console.log(Math.pow(10,2));
+    console.log(10**2);
+    const poem ="words words words words words";
+    const poemsOld ="words words \r\n words words";
+    const sentence ="I am cool";
+    console.log(sentence.length);
+    console.log(sentence.toLowerCase());
+    console.log(sentence);
+    console.log(sentence.indexOf('quick'));
+    console.log(sentence.endsWith('dog'));
+    console.log(sentence.includes('1234'));
+    const sentence ='The quick brown fox jumped quick over the lazy dog
+  '
+    console.log(sentence.slice(4,9));
+    
+    const input = prompt ("Enter a number, separated by a comma");
+    console.log(input.trim());
+    const input = prompt(Enter three fruits,);
+    console.log(input.split(','));
+    for (const fruit of input.split(','))
+      {console.log(fruit.trim());}
+    const input ='apples, oranges, bananas';
+    console.log(input.split(',').join('; '));
+    const word ="banana";
+    let reversedWord ="";
+    for (let i=word.length; i>=0; i--)
+      {reversedWord=reversedWord + word[i]};
+    
+    console.log(reversedWord);
+    console.log(word.split('').join(reversedWord));
+    const user =["oz","neher","hunter2"];
+    const firstName = user[0];
+    const lastName = user[1];
+    const password = user[2];
+    const[firstName,lastName,password] = user;
+    console.log(firstName,lastName,password);
+    const[firstName,,password] = user;
+    console.log(firstName, password);
+    "use strict";
+    const user = {
+      username:"oz";
+      password:"pass";
+    };
+    const username = user.username;
+    const password = user.password;
+    const {username, password} = user;
+    if (user.username ==="oz" && user.password ==="pass")
+      {//let me in}
+  
+    const fruits =["apples","oranges","bananas"];
+        const[first,second] = fruits;
+        console.log(fruits);
+        
+        const numbers =[1,2,3,4,5];
+        const squaredNumbers = numbers.map(function(item))
+        {return item**2};)
+        console.log(squaredNumbers);
+        const numbersConvertedToString = numbers.map(function(item)
+        {return item**2};)
+       console.log(numbersConvertedToString); 
+        const numbers =[1,2,3,4,5,6,7,8,9,10];
+        const evenNumbers = numbers.filter(function(item)
+        {return item%2===0;})
+        
+        const add =(one,two) => one+two
+                                           
+    
+    
+  </script>
+
+</body>
+</html>
